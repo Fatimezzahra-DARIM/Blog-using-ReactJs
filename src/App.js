@@ -5,6 +5,7 @@ function App() {
   //create a variable
   const title='Welcome in my new blog';
   const likes=25;
+  const link="http://www.google.com";
   // const person={name:'yoshi',age:25}; un objet on peut pas mettre const
   return (
     <div className="App">
@@ -15,6 +16,9 @@ function App() {
         {/* <p>{person}</p> */}
         <p> {10}</p>
         <p> {"hello darim"}</p>
+        <p>{[1,2,3,4,5]}</p>
+        <p>{Math.random()*10}</p>
+        <a href={link}>Google Site</a>
 
       </div>
     </div>
