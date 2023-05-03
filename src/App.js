@@ -1,24 +1,20 @@
 // import logo from './logo.svg'; if i don'y use it should i comment it [delete logo from my project]
 import './App.css';
-
+import Navbar from './Navbar';
+import Home from './Home';
+// App.js => Root component (first execute=> component tree)
 function App() {
-  //create a variable
-  const title='Welcome in my new blog';
-  const likes=25;
-  const link="http://www.google.com";
+
   // const person={name:'yoshi',age:25}; un objet on peut pas mettre const
   return (
     <div className="App">
+       {/* <Navbar></Navbar> */}
+
+<Navbar/>
+
       <div className="content">
-        <h1>App component</h1>
-        <h1>{title}</h1>
-        <p>Liked {likes} times</p>
-        {/* <p>{person}</p> */}
-        <p> {10}</p>
-        <p> {"hello darim"}</p>
-        <p>{[1,2,3,4,5]}</p>
-        <p>{Math.random()*10}</p>
-        <a href={link}>Google Site</a>
+       <Home />
+       
 
       </div>
     </div>
